@@ -14,6 +14,6 @@ On AGP 7.3, when minify is enabled (`minifyEnabled true`), the application apk d
 7. --- AT THIS STAGE IT REPRODUCES ---
 
 ## How to check whether it reproduces?
-1. ./gradlew clean app:assembleRelease
-2. dexdump app/build/outputs/apk/the_apk.apk | grep "Class desc" | sort > out.txt
+1. `./gradlew clean app:assembleRelease`
+2. `dexdump app/build/outputs/apk/the_apk.apk | grep "Class desc" | sort > out.txt`
 3. If it shows up type definitions that of the type `Landroid/XXX`, where XXX is not `support\...`, then the issue reproduces.
