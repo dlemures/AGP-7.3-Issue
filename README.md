@@ -5,7 +5,7 @@ Sample project showing new bug introduced on AGP 7.3
 On AGP 7.3, when minify is enabled (`minifyEnabled true`), the application apk dexes contain type definitions from the Android Framework.
 
 ## How to reproduce / how this sample app was created
-1. Create empty Android project in Android Studio using project creating wizard.
+1. Create empty Android project in Android Studio using project creation wizard.
 2. In `app/build.gradle`, set `minifyEnabled` to true. This is key, otherwise it does not reproduce.
 3. In `gradle/wrapper/gradle-wrapper.properties`, change gradle version to `7.4.1`.
 4. In the root `build.gradle`, change AGP version to `7.2.2`.
